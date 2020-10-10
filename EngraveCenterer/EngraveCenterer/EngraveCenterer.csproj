@@ -9,4 +9,13 @@
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ResultPage.xaml.cs">
+      <DependentUpon>ResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CentererPage.xaml.cs">
+      <DependentUpon>CentererPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
