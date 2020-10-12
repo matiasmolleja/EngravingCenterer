@@ -1,8 +1,5 @@
-﻿using System;
+﻿using EngraveCenterer.Services;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using EngraveCenterer.Services;
-using EngraveCenterer.Views;
 
 namespace EngraveCenterer
 {
