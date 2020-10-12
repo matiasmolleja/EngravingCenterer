@@ -1,11 +1,15 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace EngraveCenterer.ViewModels
 {
+    [QueryProperty(nameof(XPos), "xpos")]
+    [QueryProperty(nameof(YPos), "ypos")]
     public class ResultViewModel : BaseViewModel
     {
+
         private Point _point;
-        public Point Point 
+        public Point Point
         {
             get => _point;
             set
@@ -15,18 +19,29 @@ namespace EngraveCenterer.ViewModels
             }
         }
 
-
-        public Command ResetCommant { get; }
-
-        public ResultViewModel()
+        private string _xPos = string.Empty;
+        public string XPos
         {
-            ResetCommant = new Command(OnResetClicked);
+            get => _xPos;
+            set
+            {
+                _xPos = Uri.UnescapeDataString(value ?? string.Empty);
+                OnPropertyChanged();
+            }
         }
 
-        private async void OnResetClicked()
+
+        private string _yPos = string.Empty;
+        public string YPos
         {
-            // Prefixing with `//` switches to a different navigation stack instead of pushing to the active one
-            await Shell.Current.GoToAsync($"//{nameof(CentererViewModel)}");
+            get => _yPos;
+            set
+            {
+                _yPos = Uri.UnescapeDataString(value ?? string.Empty);
+                OnPropertyChanged();
+            }
         }
+
+        public ResultViewModel() { }
     }
 }

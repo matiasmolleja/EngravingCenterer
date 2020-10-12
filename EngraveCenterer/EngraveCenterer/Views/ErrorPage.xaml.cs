@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace EngraveCenterer.Views
 {
-    public partial class ResultPage : ContentPage
+    public partial class ErrorPage : ContentPage
     {
 
 
-        public ResultPage()
+        public ErrorPage()
         {
             InitializeComponent();
         }

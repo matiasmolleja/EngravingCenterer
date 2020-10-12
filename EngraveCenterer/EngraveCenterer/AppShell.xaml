@@ -30,9 +30,11 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="Centerer" Icon="tab_about.png" Route="CentererPage" ContentTemplate="{DataTemplate local:CentererPage}" />
+        <ShellContent Title="Cubierta" Icon="tab_about.png" Route="CentererPage" ContentTemplate="{DataTemplate local:CentererPage}" />
+        <ShellContent Title="Configuracion" Icon="tab_feed.png" Route="ConfigPage" ContentTemplate="{DataTemplate local:ConfigPage}" />
+        <!--
         <ShellContent Title="About" Icon="tab_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
-        <ShellContent Title="Browse" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Browse" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />-->
         <!--<ShellContent Title="Configuración" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:ConfigPage}"/>-->
     </TabBar>
 

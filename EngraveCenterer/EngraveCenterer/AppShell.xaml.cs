@@ -14,6 +14,7 @@ namespace EngraveCenterer
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(ResultPage), typeof(ResultPage));
+            Routing.RegisterRoute(nameof(ErrorPage), typeof(ErrorPage));
         }
 
     }
